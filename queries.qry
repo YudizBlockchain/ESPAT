@@ -1,0 +1,16 @@
+/**
+ * New query file
+ */
+query selectVenodor{
+  description: "Select all vendor based on their owner"
+  statement:
+      SELECT org.example.ecommerce.vendor
+          WHERE (Email == _$Email)
+}
+
+query selectUser{
+  description: "Select all user based on their owner"
+  statement:
+      SELECT org.example.ecommerce.user
+          WHERE (Email == _$Email)
+}
